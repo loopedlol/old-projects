@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xlms="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset = "utf-8"/>
+    </head>
+    <body> 
+        <div class = "login-form">
+            <form action="/signup" method="post">
+                <h2 class = "text-enter">login</h2>
+                {%if error%}
+                <div class = "alert alert-danger">
+                    {{error}}
+                </div>
+                {%endif%}
+                <div class = "form-group">
+                    <input type = "text" class ="form-control" name ="username" placeholder = "username" required="required"/>
+                </div>
+                <div class = "form-group">
+                    <input type="password" class="form-control" name="password" placeholder="password" required="required"/>
+                </div>
+                <div class = "form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+                </div>
+            </form>
+            <p class="text-center">
+                <a href="/login">Login</a>
+            </p>
+        </div>
+    </body>
+</html>

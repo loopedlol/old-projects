@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en" xlms="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>The title!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/static/script.js"></script>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+<body>
+    <div id="nav">
+        <a href="/">home</a>
+        <a href="/general">general</a>
+        <a href="/games">games</a>
+        <a href="/tv">shows</a>
+        <a href="/books">books</a>
+        <a href="/about">about</a>
+    </div>
+    {% block content %}
+    <h1>Welcome to my blog</h1>
+    {% endblock %}
+</body>
+</html>

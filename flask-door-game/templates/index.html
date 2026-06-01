@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<p>Choose a door. One contains a brand new car and the other two contain goats.</p>
+
+<ul>
+{% for number in myList %}
+<li><a href = "{{ '/' ~ number }}">Door {{number}}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

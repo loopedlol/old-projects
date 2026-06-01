@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xlms="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset = "utf-8"/>
+        <title>The title!</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+        <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="/static/script.js"></script>
+    </head>
+<body>
+    <div class = "login-form">
+        <form action="/login" method="post">
+            <h2 class = "text-enter"></h2>
+            {%if error%}
+            <div class = "alert alert-danger">
+                {{error}}
+            </div>
+            {%endif%}
+            <div class = "form-group">
+                <input type = "text" class ="form-control" name ="username" placeholder = "username" required="required"/>
+            </div>
+            <div class = "form-group">
+                <input type="password" class="form-control" name="password" placeholder="password" required="required"/>
+            </div>
+            <div class = "form-group">
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </div>
+        </form>
+        <p class="text-center">
+            <a href="/signup">Create account</a>
+        </p>
+    </div>
+</body>
+</html>

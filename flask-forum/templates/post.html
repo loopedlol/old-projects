@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en" xlms="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>The title!</title>
+    </head>
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+    {% block header %}
+    {% endblock %}
+    <div id="section"></div>
+    <div id="post">
+        <label>name</label>
+        <br/>
+        <input id="name"/>
+        <br/>
+        <label>subject</label>
+        <br/>
+        <input id="subject"/>
+        <br/>
+        <label>post</label>
+        <textarea id="para" cols="50" rows="10"></textarea>
+        <br/>
+        {% block button %}
+        {% endblock %}
+    </div>
+</body>
+</html>

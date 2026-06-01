@@ -1,0 +1,37 @@
+body {
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.warpper{
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background: blue;
+}
+
+form{
+    margin: 30px auto;
+}
+
+.button{
+    width: 30%;
+    border: none;
+    margin-top: 5px;
+    color: red;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.control{
+    width: 50%;
+}
+
+.error{
+    color: red;
+}
+
+.valid{
+    color: green;
+}
